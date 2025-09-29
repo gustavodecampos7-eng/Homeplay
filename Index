@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HomePlay TV</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="HomePlay" class="logo" />
+      </div>
+      <nav class="main-nav">
+        <a href="#planos">Planos</a>
+        <a href="https://wa.me/5544999285482" target="_blank" rel="noreferrer">Suporte</a>
+        <a href="http://starweb.webplayer.one" target="_blank" class="btn-primary">▶ Já sou cliente</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Carrossel -->
+  <section class="hero">
+    <div class="carousel">
+      <div class="slides">
+        <!-- Desktop images (will be swapped on mobile by CSS) -->
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/banners/banner1_mobile.jpg">
+          <img src="assets/banners/banner1_desktop.jpg" alt="Assista Tudo" class="slide-img">
+        </picture>
+
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/banners/banner2_mobile.jpg">
+          <img src="assets/banners/banner2_desktop.jpg" alt="Toda a Grade de Canais" class="slide-img">
+        </picture>
+
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/banners/banner3_mobile.jpg">
+          <img src="assets/banners/banner3_desktop.jpg" alt="O Streaming Mais Completo" class="slide-img">
+        </picture>
+      </div>
+
+      <div class="hero-actions">
+        <a href="http://starweb.webplayer.one" target="_blank" class="btn-cta">▶ Assista via navegador</a>
+        <a href="https://wa.me/5544999285482?text=Ol%C3%A1%2C%20quero%20assinar%20o%20HomePlayTV%20e%20conhecer%20os%20planos%20dispon%C3%ADveis." class="btn-outline" target="_blank">Criar assinatura</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planos -->
+  <section id="planos" class="section-planos">
+    <div class="container">
+      <h2>Planos de Assinatura / Renovação</h2>
+
+      <div class="planos-grid">
+        <article class="plano">
+          <h3>Mensal</h3>
+          <p class="price">R$ 19,90</p>
+          <img src="assets/qr_mensal.png" alt="QR Code Plano Mensal" class="qr">
+          <a class="btn-pay" href="assets/qr_mensal.png" target="_blank" download>Ver QR / Pagar</a>
+          <a class="btn-whatsapp" href="https://wa.me/5544999285482?text=Envio%20comprovante%20Plano%20Mensal" target="_blank">Enviar comprovante</a>
+        </article>
+
+        <article class="plano">
+          <h3>Semestral</h3>
+          <p class="price">R$ 100,00</p>
+          <img src="assets/qr_semestral.png" alt="QR Code Plano Semestral" class="qr">
+          <a class="btn-pay" href="assets/qr_semestral.png" target="_blank" download>Ver QR / Pagar</a>
+          <a class="btn-whatsapp" href="https://wa.me/5544999285482?text=Envio%20comprovante%20Plano%20Semestral" target="_blank">Enviar comprovante</a>
+        </article>
+
+        <article class="plano">
+          <h3>Anual</h3>
+          <p class="price">R$ 180,00</p>
+          <img src="assets/qr_anual.png" alt="QR Code Plano Anual" class="qr">
+          <a class="btn-pay" href="assets/qr_anual.png" target="_blank" download>Ver QR / Pagar</a>
+          <a class="btn-whatsapp" href="https://wa.me/5544999285482?text=Envio%20comprovante%20Plano%20Anual" target="_blank">Enviar comprovante</a>
+        </article>
+      </div>
+
+      <p class="note">Ao pagar, envie o comprovante pelo WhatsApp para ativação.</p>
+    </div>
+  </section>
+
+  <!-- Floating support icons -->
+  <div class="support-fixed">
+    <a class="wa" href="https://wa.me/5544999285482?text=Ol%C3%A1%2C%20quero%20assinar%20o%20HomePlayTV%20e%20conhecer%20os%20planos%20dispon%C3%ADveis." target="_blank" aria-label="WhatsApp"></a>
+    <a class="tg" href="https://t.me/4499285482" target="_blank" aria-label="Telegram"></a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 HomePlay TV — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple carousel (CSS handles transitions; this toggles slides for older browsers)
+    (function() {
+      const slides = document.querySelectorAll('.slides picture');
+      let i = 0;
+      function show() {
+        slides.forEach((s, idx) => s.style.display = (idx === i ? 'block' : 'none'));
+        i = (i + 1) % slides.length;
+      }
+      show();
+      setInterval(show, 3000);
+    })();
+  </script>
+</body>
+</html>
