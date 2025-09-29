@@ -1,0 +1,16 @@
+homeplaytv/
+├── index.html
+├── css/
+│   └── style.css
+└── assets/
+    ├── logo.png                 (coloque aqui a logo)
+    ├── qr_mensal.png            (baixar do link abaixo)
+    ├── qr_semestral.png         (baixar do link abaixo)
+    ├── qr_anual.png             (baixar do link abaixo)
+    └── banners/
+        ├── banner1_desktop.jpg  (colocar depois)
+        ├── banner2_desktop.jpg
+        ├── banner3_desktop.jpg
+        ├── banner1_mobile.jpg
+        ├── banner2_mobile.jpg
+        └── banner3_mobile.jpg
